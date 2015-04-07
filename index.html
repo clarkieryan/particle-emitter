@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Particle System</title>
+
+	<link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="bower_components/foundation/js/foundation.min.js"></script>
+
+
+	<script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript" src="js/particleSystem.js"></script>
+</head>
+<body>
+	<div class="row">
+		<div class="large-8 columns">
+			<h1>Simple particle emitter</h1>
+			<canvas id="myCanvas" height="400" width="600">You're browser does not support Canvas elements</canvas>
+		</div>
+		<div class="large-4 columns">
+			<h1>&nbsp;</h1>
+			<h5>Sprites</h5>
+			<div id="sprite-amount" class="range-slider" data-slider data-options="step: 1;">
+				<span class="range-slider-handle" role="slider" tabindex="0"></span>
+				<span class="range-slider-active-segment"></span>
+				<input type="hidden">
+			</div>
+
+			<h5>Radius</h5>
+			<div id="sprite-radius" class="range-slider" data-slider data-options="step: 1; initial: 15;">
+				<span class="range-slider-handle" role="slider" tabindex="0"></span>
+				<span class="range-slider-active-segment"></span>
+				<input type="hidden">
+			</div>
+
+
+			<h5>Gravity Y</h5>
+			<div id="sprite-gravity" class="range-slider" data-slider data-options="step: 1; initial: 50;">
+				<span class="range-slider-handle" role="slider" tabindex="0"></span>
+				<span class="range-slider-active-segment"></span>
+				<input type="hidden">
+			</div>
+
+	</div>
+	
+</body>
+</html>
