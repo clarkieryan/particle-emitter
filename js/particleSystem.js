@@ -104,8 +104,6 @@ var ParticleSystem = function(overrideSettings) {
 	var that = this;
 	this._settings = $.extend( particleSystemDefaultSettings, overrideSettings );
 	this._particleStorage = [];
-
-	this._createParticles(this._settings.defaultSprites);
 };
 
 ParticleSystem.prototype._createParticles = function( amount ) {
