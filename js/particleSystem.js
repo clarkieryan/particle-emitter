@@ -29,11 +29,11 @@ var particleSystemDefaultSettings = {
 		width:100
 	},
 	gravity: {
-		x:5, 
+		x:0, 
 		y:0
 	},
 	defaultSprites: 1, 
-	radius:10
+	radius:1
 };
 
 var Particle = function( overrideSettings ) {

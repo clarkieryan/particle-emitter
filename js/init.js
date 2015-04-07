@@ -4,9 +4,10 @@ window.onload = function(){
 	var ctx=c.getContext("2d");
 	//Create a new instance
 	var ps = new ParticleSystem();
-
+	var i = 0
 	//Set up the drawing loop
 	var draw = function(progress){
+
 	    var currentTime = Date.now();
 	    timeDelta = currentTime - previousTime;
 	    previousTime = currentTime;
