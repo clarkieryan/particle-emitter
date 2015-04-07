@@ -132,9 +132,7 @@ ParticleSystem.prototype.update = function( timeDelta ) {
 };
 
 ParticleSystem.prototype.updateSettings = function(settings) {
-	this._settings.defaultSprites = settings.defaultSprites;
-	this._settings.radius = settings.radius;
-	this._settings.gravity = settings.gravity;
+	this._settings = $.extend(this._settings, settings);
 };
 
 ParticleSystem.prototype.draw = function( ctx ) {
