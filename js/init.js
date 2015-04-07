@@ -29,8 +29,8 @@ window.onload = function(){
 				defaultSprites: $('#sprite-amount').attr('data-slider'),
 				radius: $('#sprite-radius').attr('data-slider')/10,
 				gravity: {
-					y: $('#sprite-gravity').attr('data-slider')/100,
-					x:0
+					y: $('#sprite-gravity-y').attr('data-slider')/100,
+					x: $('#sprite-gravity-x').attr('data-slider')/100
 				}
 			})
 			}
