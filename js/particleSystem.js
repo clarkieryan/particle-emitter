@@ -82,22 +82,22 @@ Particle.prototype.update = function( timeDelta ) {
 };
 
 Particle.prototype.draw = function( ctx ) {
-	ctx.save();
-	//Soft glow
-	ctx.shadowColor = this._color
-	ctx.shadowOffsetX = 0;
-	ctx.shadowOffsetY = 0;
-	ctx.shadowBlur = 20;
+		ctx.save();
+		//Soft glow
+		ctx.shadowColor = this._color
+		ctx.shadowOffsetX = 0;
+		ctx.shadowOffsetY = 0;
+		ctx.shadowBlur = 20;
 
-	ctx.fillStyle = this._color;
-	// draw a circle centered on the particle's location, sized to the particle
-	ctx.beginPath();
-	ctx.globalAlpha = this._alpha;
+		ctx.fillStyle = this._color;
+		// draw a circle centered on the particle's location, sized to the particle
+		ctx.beginPath();
+		ctx.globalAlpha = this._alpha;
 
-	ctx.arc( this._position.x, this._position.y, this._radius, 0, Math.PI * 2, true );
-	ctx.closePath();
-	ctx.fill();
-	ctx.restore();
+		ctx.arc( this._position.x, this._position.y, this._radius, 0, Math.PI * 2, true );
+		ctx.closePath();
+		ctx.fill();
+		ctx.restore();
 };
 
 var ParticleSystem = function(overrideSettings) {
